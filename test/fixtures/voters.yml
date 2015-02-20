@@ -1,13 +1,21 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  email: MyString
-  password_digest: MyString
+parker:
+  name: Parker Smith
+  email: pk@gmail.com
+  password_digest: password
   politician_id: 1
 
-two:
+mike:
+  name: Mike Jones
+  email: mike@gmail.com
+  password_digest: password
+  politician_id: 1
+
+<% 3.times do |i| %>
+voter_<%= i %>:
   name: MyString
   email: MyString
-  password_digest: MyString
+  password_digest: password
   politician_id: 1
+<% end %>
