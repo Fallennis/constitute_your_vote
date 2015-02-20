@@ -26,7 +26,7 @@ class DashboardController < ApplicationController
   end
 
   def log_out
-    session[:author_id] = nil
+    session[:id] = nil
     redirect_to dashboard_log_in_path
   end
 

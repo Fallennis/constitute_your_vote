@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   get 'dashboard/log_in'
   post 'dashboard/log_in'
   get 'dashboard/log_out'
-  get "sign_up" => "politicians#new"
+  get 'politician/show'
+  get 'voters/show'
+  get 'voters/index'
 
   resources :politicians
   resources :bills

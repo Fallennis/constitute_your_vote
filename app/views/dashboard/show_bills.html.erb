@@ -2,12 +2,11 @@
 
 <%= link_to "The White House", "http://whitehouse.gov", class: "white" %><br>
 
-<%= link_to "Corrupt Officials", politicians_path, id: "go-to-politicians" %>
 
 <h2>List of current bills:</h2>
 <% @bills.each do |b| %>
   <p class="bill_name"><%= b.name %></p>
 <% end %>
 
-<%= link_to "Bill details", politicians_path, id: "go-to-politician" %><br>
-<%= link_to "Bill voting (logged in users only)", voters_path, id: "go-to-voters" %>
+<%= link_to "Bill details", new_politician_path, id: "go-to-politician" %><br>
+<%= link_to "Bill voting (logged in users only)", voters_show_path, id: "go-to-voters" %><br>
