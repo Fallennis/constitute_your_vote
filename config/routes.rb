@@ -2,6 +2,10 @@ Rails.application.routes.draw do
   get 'dashboard/show_bills'
   get 'dashboard/render_bills'
   get 'dashboard/go_to_bills'
+  get 'dashboard/log_in'
+  post 'dashboard/log_in'
+  get 'dashboard/log_out'
+  get "sign_up" => "politicians#new"
 
   resources :politicians
   resources :bills
@@ -14,7 +18,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'dashboard#show_bills'
+   root 'dashboard#log_in'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

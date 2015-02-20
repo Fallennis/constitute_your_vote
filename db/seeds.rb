@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-# politician = Politician.create!(name: "Barack Obama", email: "obama@gmail.com", password: "password")
+ # politician = Politician.create!(name: "Barack Obama", email: "obama@gmail.com", password: "password")
 #
 # bill = Bill.create!(name: "Healthcare", description_text: "A bill to redefine affordable healthcare", politician_id: 1)
 #
