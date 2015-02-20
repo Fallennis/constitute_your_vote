@@ -17,5 +17,5 @@ class DashboardControllerTest < ActionController::TestCase
     get :go_to_bills
     assert_redirected_to dashboard_show_bills_path
   end
-
+  
 end

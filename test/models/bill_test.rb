@@ -7,5 +7,5 @@ class BillTest < ActiveSupport::TestCase
   test "bill exists" do
     assert Bill.count > 0
   end
-  
+
 end

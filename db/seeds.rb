@@ -6,23 +6,15 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-<<<<<<< HEAD
- politician = Politician.create!(name: "Barack Obama", email: "obama@gmail.com", password: "password")
-=======
+
 politician = Politician.create!(name: "Barack Obama", email: "obama@gmail.com", password: "password")
->>>>>>> ca813dcef08b9b57708c913b5988e010d2e1e409
 
 bill = Bill.create!(name: "Healthcare", description_text: "A bill to redefine affordable healthcare", politician_id: 1)
 
 voter = Voter.create!(name: "Sam Jones", email: "sam@gmail.com", password: "password", politician_id: 1)
 
 vote = Vote.create!(voter_id: 1, bill_id: 1)
-<<<<<<< HEAD
 
-=======
-#
->>>>>>> ca813dcef08b9b57708c913b5988e010d2e1e409
-#
 #
 #
 # 10.times do
