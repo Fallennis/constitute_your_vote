@@ -1,10 +1,14 @@
 class PoliticiansController < ApplicationController
-  before_action :set_politician, only: [:show, :edit, :update, :index]
+  before_action :set_politician, only: [:show, :edit, :update]
   before_action :logged_in?, except: [:new, :create]
 
 
   def index
     @politicians = Politician.all
+  end
+
+  def show
+    @politician = Politician.new
   end
 
   def edit
@@ -43,6 +47,4 @@ class PoliticiansController < ApplicationController
   def politician_params
     params.require(:politician).permit(:email, :name, :password)
   end
-end
-
 end
