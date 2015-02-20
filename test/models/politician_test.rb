@@ -8,6 +8,12 @@ class PoliticianTest < ActiveSupport::TestCase
       assert true
     end
 
+    test "there is data" do
+      assert Politician.count > 0
+    end
+
+    
+
 
 
 
