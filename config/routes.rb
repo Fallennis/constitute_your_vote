@@ -1,37 +1,20 @@
 Rails.application.routes.draw do
-  get 'voters/index'
+  get 'dashboard/show_bills'
+  get 'dashboard/render_bills'
+  get 'dashboard/go_to_bills'
 
-  get 'voters/new'
+  resources :politicians
+  resources :bills
+  resources :voters
+  resources :votes
 
-  get 'voters/edit'
 
-  get 'voters/create'
-
-  get 'voters/update'
-
-  get 'voters/show'
-
-  get 'voters/destroy'
-
-  get 'politicians/index'
-
-  get 'politicians/new'
-
-  get 'politicians/edit'
-
-  get 'politicians/create'
-
-  get 'politicians/show'
-
-  get 'politicians/update'
-
-  get 'politicians/destroy'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+   root 'dashboard#show_bills'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
