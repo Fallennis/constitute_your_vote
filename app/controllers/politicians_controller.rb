@@ -2,6 +2,10 @@ class PoliticiansController < ApplicationController
   before_action :set_politician, only: [:show, :edit, :update]
   before_action :logged_in?, except: [:new, :create]
 
+  validates :name, presence: true
+  validates :email, uniqueness: true
+  validates :email, presence: true
+
 
   def index
     @politicians = Politician.all
